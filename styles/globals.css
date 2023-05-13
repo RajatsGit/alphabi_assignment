@@ -14,8 +14,53 @@
   position: fixed;
   display: flex;
   justify-content: center;
-  padding: 120px 24px 160px 24px;
+  padding: 2rem;
   pointer-events: none;
+
+}
+body{
+    background-color: #F2F4F8;
+}
+.loginScreen{
+  width: 400px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.loginScreen img{
+  width: 400px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.loginScreen input{
+  display: block;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0px 10px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.loginScreen input[type="submit"]{
+  border-radius: 0px;
+  background-color: rgb(15, 137, 218);
+  border: 0;
+  color: #fff;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.loginScreen h4 span{
+  color: rgb(15, 137, 218);
+  cursor: pointer;
+}
+.padding_box{
+    margin: 2rem;
+    border: 1px solid black;
+    background: #000;
 }
 
 .main:before {
@@ -87,6 +132,10 @@
 
 .head_text {
   @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+}
+
+.padding_box{
+    @apply p-3 bg-white;
 }
 
 .orange_gradient {
